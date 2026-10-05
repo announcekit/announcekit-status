@@ -22,10 +22,7 @@ sites:
     url: https://mcp.announcekit.app/health
 
 status-website:
-  # Trial: served at https://announcekit.github.io/announcekit-status
-  # Cutover: remove baseUrl, uncomment cname, point the status DNS record (CNAME) to announcekit.github.io
-  baseUrl: /announcekit-status
-  # cname: status.announcekit.app
+  cname: status.announcekit.app
   name: AnnounceKit Status
   introTitle: "AnnounceKit system status"
   introMessage: Live status of AnnounceKit services, checked every 5 minutes.
