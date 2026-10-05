@@ -1,31 +1,36 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: announcekit
+repo: announcekit-status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Website
+    url: https://announcekit.app
+  - name: Dashboard
+    url: https://announcekit.app/dashboard
+  - name: API
+    url: https://announcekit.app/gq/v2
+    method: POST
+    headers:
+      - "Content-Type: application/json"
+    body: '{"query":"{__typename}"}'
+  - name: Widget CDN
+    url: https://cdn.announcekit.app/widget-v2.js
+  - name: Changelog Pages
+    url: https://changelog.announcekit.app
+  - name: Image CDN
+    url: https://img.announcekit.app/c10f62bbae1530a45a4feb09fb514cc7?w=100&s=1af07b4643b45671e954007410a8847d
+  - name: MCP Server
+    url: https://mcp.announcekit.app/health
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  # Trial: served at https://announcekit.github.io/announcekit-status
+  # Cutover: remove baseUrl, uncomment cname, point the status DNS record (CNAME) to announcekit.github.io
+  baseUrl: /announcekit-status
+  # cname: status.announcekit.app
+  name: AnnounceKit Status
+  introTitle: "AnnounceKit system status"
+  introMessage: Live status of AnnounceKit services, checked every 5 minutes.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - title: AnnounceKit
+      href: https://announcekit.app
