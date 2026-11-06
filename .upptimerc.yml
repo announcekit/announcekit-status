@@ -31,3 +31,9 @@ status-website:
       href: /
     - title: AnnounceKit
       href: https://announcekit.app
+
+i18n:
+  incidentReport: "View details →"
+  incidentTitle: "Update #$NUMBER"
+  incidentDetails: "Details"
+  incidentBack: "← Back to status"
