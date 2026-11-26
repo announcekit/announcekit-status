@@ -77,21 +77,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/changelog.announcekit.app.ico",
     "slug": "changelog-pages",
     "status": "up",
-    "uptime": "97.82%",
+    "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "96.30%",
-    "uptimeYear": "97.82%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 397,
     "timeDay": 576,
     "timeWeek": 478,
     "timeMonth": 392,
     "timeYear": 397,
-    "dailyMinutesDown": {
-      "2026-11-12": 66,
-      "2026-11-11": 1440,
-      "2026-11-10": 114
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "Image CDN",
